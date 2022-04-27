@@ -1,17 +1,50 @@
 body {
     margin: 0;
+    color: white;
 }
 
-h1{
-    color: blue;
+header {
+    position: absolute;
+    width: 98vw;
+    margin: 2em 2em 0px 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        margin-left: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            margin-right: 1em;
+        }
+    }
+
+    nav{
+        margin-right: 2em;
+        .menu {
+          display: flex;
+
+             li {
+                list-style-type: none;
+                margin-left: 1em;
+            }
+        }
+    }
 }
 
 .banner {
     width: 100vw;
+
+    #video {
+        width: 100vw;
+        height: auto;
+        box-shadow: 0px 1px 5px 1px black;
+    }
 }
 
-#video {
-    width: 100vw;
-    height: auto;
-    margin: none;
-}
+
+
