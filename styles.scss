@@ -6,6 +6,36 @@ $yellow: #DAD674;
 body {
     margin: 0;
     color: white;
+    min-height: 100%;
+    // background-color: rgb(20, 20, 20);
+}
+
+main{
+    overflow: auto;
+    padding-bottom: 5.5rem;
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    position: relative;
+    // margin-top: -1rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        li{
+            margin: 0 1em;
+        }
+    }
 }
 
 header {
@@ -64,10 +94,35 @@ header {
 }
 
 .banner {
-    width: 100vw;
+    width: 100%;
+
+    .calltoaction{
+        z-index: 1;
+        position: absolute;
+        top: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 1px 1px black;
+
+        h1{
+            font-size: 4em;
+            padding: 0;
+            margin: 0;
+        }
+        
+
+        .line{
+            height: 2px;
+            background-color: $yellow;
+            width: 10%;
+        }
+    }
 
     #video {
-        width: 100vw;
+        z-index: -2;
+        width: 100%;
         height: auto;
         box-shadow: 0px 1px 5px 1px black;
     }
