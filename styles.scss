@@ -1,6 +1,23 @@
 
 $blue:#19adb2;
 $yellow: #DAD674;
+@font-face {
+    font-family: Organetto;
+    src: url('organetto-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('assets/fonts/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.organetto {
+    font-family: Organetto;
+}
 
 
 body {
@@ -30,7 +47,7 @@ footer{
     
     ul{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         list-style-type: none;
         li{
             margin: 0 1em;
@@ -44,6 +61,7 @@ header {
     margin: 2em 2em 0px 10px;
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 
     .header{
         display: flex;
@@ -59,18 +77,30 @@ header {
         align-items: center;
         justify-content: space-between;
 
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: .8em;
+            
+        }
+
         img{
             margin-right: 1em;
         }
     }
     nav{
         margin-right: 2em;
+        font-size: 1em;
+        font-weight: 500;
+        // border: 2px solid black;
         .menu {
           display: flex;
 
              li {
                 list-style-type: none;
-                margin-left: 1em;
+                margin-left: 3em;
                 z-index: 2;
 
                 a{
@@ -95,21 +125,29 @@ header {
 
 .banner {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    
 
     .calltoaction{
         z-index: 1;
         position: absolute;
-        top: 250px;
+        top: 35vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-shadow: 1px 1px 1px black;
+        font-weight: 500;
 
         h1{
             font-size: 4em;
             padding: 0;
             margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
         }
         
 
