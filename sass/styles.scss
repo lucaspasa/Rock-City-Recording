@@ -1,6 +1,6 @@
 
 $blue:#19adb2;
-$yellow: #DAD674;
+$yellow: #DAD674; 
 $black: rgb(20, 20, 20);
 $font: 'Montserrat', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -9,43 +9,14 @@ body {
     margin: 0;
     color: white;
     min-height: 100%;
-    // background-color: rgb(20, 20, 20);
 }
 
 main{
-    // overflow: auto;
-    // padding-bottom: 5.5rem;
-    // margin-bottom: -5.5rem;
     display: flex;
     flex-direction: column;
-    
 }
 
-footer{
-    background-color: rgb(20, 20, 20);
-    text-align: center;
-    align-self: flex-end;
-    bottom: 0;
-    // margin-top: 1%;
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    
-    
-    ul{
-        display: flex;
-        justify-content: space-evenly;
-        list-style-type: none;
-        li{
-            margin: 0 1em;
-        }
-    }
-}
-
+// HEADER AND NAV 
 header {
     position: absolute;
     width: 98vw;
@@ -62,13 +33,16 @@ header {
         // border: 1px black solid;
         
     }
-    
+    // LOGO 
     .logo {
         margin-left: 1em;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        border: 2px solid;
+        .title-1{
+            font-size: 2em;
+        }
         a{
             text-decoration: none;
             color: white;
@@ -80,8 +54,10 @@ header {
 
         img{
             margin-right: 1em;
+            width: clamp(1em, 100%, 100%);
         }
     }
+    // NAV MENU 
     nav{
         margin-right: 2em;
         font-size: 1em;
@@ -110,15 +86,18 @@ header {
     }
 }
 
+// MAX WIDTH FOR LARGER SCREENS 
 .container {
     max-width: 1600px;
     width: 1200px;
 }
 
+// VIDEO CROP 
 .banner-wrap {
     overflow: hidden;
 }
 
+// BANNER/VIDEO 
 .banner {
     position: relative;
     width: 100%;
@@ -126,14 +105,13 @@ header {
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
-    // max-height: 70vh;
     // border: 2px solid black;
     margin-top: -10%;
     margin-bottom: -10%;
     box-shadow: 0px 1px 5px 1px black;
     overflow: hidden;
     
-
+    // LANDING TEXT 
     .calltoaction{
         z-index: 1;
         position: absolute;
@@ -155,7 +133,6 @@ header {
             font-weight: 800;
         }
         
-
         .line{
             height: 2px;
             background-color: $yellow;
@@ -163,10 +140,10 @@ header {
         }
     }
 
+    // ACTUAL VIDEO
     #video {
         z-index: -2;
         width: 100%;
-        // height: 140vh;
         overflow: hidden;
     }
 }
@@ -177,6 +154,7 @@ header {
     width: 10%;
 }
 
+// BIO AND PARAGRAPHS 
 .content {
     display: flex;
     position: relative;
@@ -187,6 +165,7 @@ header {
     // border: 2px solid black;
     padding-top: 4em;
     
+    // TOP PARAGRAPH 
     ._content{
         display: flex;
         flex-direction: column;
@@ -226,6 +205,7 @@ header {
     }
 }
 
+// BOTTOM PARAGAPHS 
 .content-2{
     background-color: $black;
     padding-bottom: 3em;
@@ -253,6 +233,35 @@ header {
     p{
         color: white;
     }
+}
+
+// FOOTER
+footer{
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    align-self: flex-end;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        li{
+            margin: 0 1em;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    
 }
 
 

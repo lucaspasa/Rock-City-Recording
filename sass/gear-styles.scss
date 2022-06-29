@@ -1,6 +1,15 @@
+
+$blue:#19adb2;
+$yellow: #DAD674; 
+$black: rgb(20, 20, 20);
+$font: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 body {
     color: white;
     background-color: black;
+    font-family: $font;
     
 }
 
@@ -14,7 +23,12 @@ body {
     overflow: hidden;
     position: relative;
     text-align: center;
-    color: white;
+    
+    h1{
+        color: $blue;
+        margin-top: 1em;
+        font-size: 3.5em;
+    }
 
   .centered {
     position: absolute;
