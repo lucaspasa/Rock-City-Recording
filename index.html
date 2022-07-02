@@ -26,10 +26,10 @@
 
                 </ul>
             </nav>
-            <div class="hamburger">
-                <div class="ham-line-1"></div>
-                <div class="ham-line-2"></div>
-                <div class="ham-line-3"></div>
+            <div class="hamburger" id="hamburger-button">
+                <div id="hamLine1" class="ham-line-1"></div>
+                <div id="hamLine2" class="ham-line-2"></div>
+                <div id="hamLine3" class="ham-line-3"></div>
             </div>
         </div>
     </header>
@@ -76,7 +76,7 @@
             <div class="_content container" >
                 <article class="paragraphs">
                     <div class="owner paragraph-colomn">
-                        <h2>Our Owner</h2>
+                        <h2 class="title-3">Our Owner</h2>
                          <div class="line"></div>
                         <p class="p2">Owner David Rinaldi’s vision stemmed from necessity, 
                             as he opened his home to engineering and recording many of the
@@ -108,14 +108,61 @@
     <!-- FOOTER  -->
     <footer>
         <ul>
-            <li>Chatham, New York, USA</li>
-            <li>|</li>
-            <li>Phone: 518-376-4149</li>
-            <li>|</li>
-            <li>Email: ldjingles@gmail.com</li>
+            <li class="place">Chatham, New York, USA</li>
+            <li class="line1">|</li>
+            <li class="phone">Phone: 518-378-4149</li>
+            <li class="line2">|</li>
+            <li class="email">Email: <span>ldjingles@gmail.com</span></li>
         </ul>
 
         <div>Copyright © 2022 Rock City Road</div>
     </footer>
 </body>
+<script>
+     // assign variables 
+     const hamburger = document.getElementById("hamburger-button");
+        let swatch = false;
+
+        // event listener 
+        hamburger.addEventListener("click", function(e){
+            console.log("test");
+            
+            // on off switch for hamburger menu dropdown
+            if(swatch == false){
+                // flip switch
+                swatch = true;
+
+                // make menu appear
+                
+                // change hamburger color 
+                hamburger.style.backgroundColor = "#19adb2";
+                hamburger.style.transition = ".3s"
+
+                //animate hamburger
+                hamLine1.style.transition = ".3s ease"
+                 hamLine2.style.transition = ".1s ease"
+                 hamLine3.style.transition = ".3s ease"
+                hamLine2.style.visibility = "hidden";
+                hamLine1.style.transform = "rotate(45deg) translate(5px, 5px)";
+                hamLine3.style.transform = "rotate(-45deg) translate(6px, -6px)";
+                // blur background
+              
+
+            } else {
+                 // hide menu               
+               
+                //recolor hamburger
+                hamburger.style.backgroundColor = "#DAD674"
+                 //animate hamburger
+                 hamLine2.style.visibility = "visible";
+                 hamLine1.style.transform = "translate(0px, 0px) rotate(0deg) ";
+                 hamLine3.style.transform = "translate(0px, 0px) rotate(0deg) ";
+                 
+                
+                // flip switch
+                swatch = false;
+            }
+            
+        })
+</script>
 </html>
