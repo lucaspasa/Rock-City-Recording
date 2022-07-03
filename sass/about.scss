@@ -1,0 +1,68 @@
+$blue:#19adb2;
+$yellow: #DAD674; 
+$black: rgb(20, 20, 20);
+$font: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    main{
+        margin-top: 12em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $font;
+        // border: 2px solid pink;
+        p{
+            font-family: $font;
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 2em;
+            max-width: 1200px;
+            // border: 2px solid pink;
+
+        }
+        .cap{
+            width: 95%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-weight: 600;
+
+            }
+        }
+        .dot{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: $blue;
+        }
+        .dot-bottom{
+            margin-top: 1em;
+        }
+        .dot-top{
+            margin-bottom: 1em;
+        }
+        section:nth-child(even){
+            background-color: black;
+            color: white;
+        }
+
+        .section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            h3{
+                font-size: 1.5em;
+                border-bottom: 2px solid $blue;
+            }
+            p{
+                width: 90%;
+            }
+        }
+    }// X MAIN X
+} // X BODY X

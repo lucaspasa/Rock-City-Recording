@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css"> 
-    <link rel="stylesheet" href="/css/gear-styles.css"> 
+    <link rel="stylesheet" href="/css/about.css"> 
+    <link rel="stylesheet" href="/css/header.css"> 
     <link rel="icon" href="assets/logo.png">
     <title>Rock City Road</title>
 </head>
@@ -15,10 +15,10 @@
     
             <div class="logo">
                 <a href="index.html"><img src="assets/logo.png"></a>
-                <a href="index.html"><h1>ROCK CITY ROAD</h1></a>
+                <a href="index.html"><h1 class="title-1" >ROCK CITY ROAD</h1></a>
             </div>
     
-            <nav>
+            <nav id="menu">
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="gear.html">Gear</a></li>
@@ -26,24 +26,93 @@
 
                 </ul>
             </nav>
+            <div class="hamburger" id="hamburger-button">
+                <div id="hamLine1" class="ham-line-1"></div>
+                <div id="hamLine2" class="ham-line-2"></div>
+                <div id="hamLine3" class="ham-line-3"></div>
+            </div>
+        </div>
+        <div class="title-and-picture">
+            <img src="assets/guitar.jpg" alt="">
+            <h1 class="page-title">About</h1>
         </div>
     </header>
-    <main>
 
-        <div class="picture">
-            
-            <img src="assets/guitar.jpg" alt="">
-            <h1 class="centered">About</h1>
+    <!-- MAIN  -->
+    <main>
+        <h2 class="page-title">Tone/Equipment/Expectation</h2>
+        <div class="cap cap-top">
+            <p>Lets be clear up-front: this is your vision, not ours.. Our job at RCR is to make the dream of your project
+                become a reality, do it efficiently, and to make it sound as great and professional as it can, in a casual,
+                comfortable, safe, fun environment . So, this is a best practice tip sheet.</p>
+        </div>
+        <div class="dot dot-top"></div>
+        <Section class="section pre-production">
+            <h3>Pre-Production</h3>
+            <p>Practice practice practice. I know this may be obvious, but it may help get everyone on
+                the same page. Be as tight as possible before hand. The recording studio isn’t a writing session. Every
+                song should be worked out completely beforehand. Best practice for a recording in today’s streaming
+                environment is to keep the songs shorter than 4 minutes. Long intros and extended music only
+                interludes should be condensed if possible. Save the longer versions for live shows and remember,
+                asking to keep short attention span listeners interest, in our ‘7 second society’ is a big ask these days.</p>
+        </Section>
+        <Section class="section communicate">
+            <h3>Communicate</h3>
+            <p>By all means, please let us know what recording sounds and tones you envision this
+                project to come close to. Having a point of reference will help us hit your target. We strongly encourage
+                you to send us a list of songs that have tones to reference the way you want to hear your instrument or
+                overall song. Each musician should have input here.</p>
+        </Section>
+        <Section class="section equipment">
+            <h3>Equipment</h3>
+            <p>So we have gone to great lengths to have great sounding equipment at the ready if you
+                choose to. You know your sound, so, if you are even the least bit concerned about getting that
+                sound…BRING YOUR GEAR. Even if we don’t use it, we have the option. The number one most important
+                thing in as session is to get the sound right at its source. Postproduction possibilities are amazing, but if
+                it sounds wrong at the time of the recording it will always sound wrong. Don’t forget to bring tuners and
+                check your instruments for intonation before the session. New strings on guitars should be done at least
+                a week or 2 before the session. Fresh guitar strings and recordings don’t really mix. Drummers, please
+                bring tuning key and any baffling. Fresh bass strings can be a plus if that’s the sound you’re going for.
+                Amps with buzzing or humming may be ok for a live gig, but not great for recordings. Also, we provide
+                headphones, but if you have a favorite pair of closed back headphones, and you know your comfortable
+                with them you can choose to bring them.</p>
+        </Section>
+        <Section class="section comforts">
+            <h3>Comforts</h3>
+            <p>This may sound odd, but the studio should completely fit your vibe. Lighting can be
+                changed to your tastes. We can change colors, darken things, or brighten them. We’d like to know your
+                preferences. Same goes for room temperature. If you like a certain temp, please let us know in advance.
+                It’s a large room, so it takes time to change the temperature. Also if there is any particular scents you
+                
+                might want to bring, feel free. Let us know! Water and coffee will be available but bring what you might
+                need. There are take out options in Chatham but not delivery, so it’s a short ride to pick up food. Smoking
+                is an outside only activity. Feel free to roam the grounds during breaks. Also before the session, please
+                send us the band roster with first names and instrument played. I don’t want to have to call out “hey
+                drummer” if possible.</p>
+        </Section>
+        <div class="dot dot-bottom"></div>
+        <div class="cap cap-bottom">
+            <p>Lastly, please keep in mind that load in, and load out will take about a half hour, so account for that in
+                your arrival time and exits times. We will make every effort to be as prepared as possible for you. But
+                inevitably there is always an amount of time that it takes to get sounds adjusted, and levels set. Be
+                prepared to do a bit of hurry up and waiting, and a few aborted song takes. Your headphone mix might
+                take a bit to get to your tastes, so we will be as efficient as possible, tweaking them in. They will never be
+                perfect, but you should be comfortable with what you hear.</p>
         </div>
         
-        <section>
-            <div class="calltoaction container">
-                <h2>A comfortable inviting atmosphere</h2>
-                <div class="line"></div>
-                <h1>YOUR NEXT RELEASE</h1>
-                <h1>STARTS HERE</h1>
-            </div>
-        </section>
     </main>
+    <!-- FOOTER  -->
+    <footer>
+        <ul>
+            <li class="place">Chatham, New York, USA</li>
+            <li class="line1">|</li>
+            <li class="phone">Phone: 518-378-4149</li>
+            <li class="line2">|</li>
+            <li class="email">Email: <span>ldjingles@gmail.com</span></li>
+        </ul>
+
+        <div>Copyright © 2022 Rock City Road</div>
+    </footer>
 </body>
+<script src="menu.js"></script>
 </html>

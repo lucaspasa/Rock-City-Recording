@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css"> 
+    <link rel="stylesheet" href="/css/header.css"> 
     <link rel="stylesheet" href="/css/gear-styles.css">
     <link rel="icon" href="assets/logo.png">
     <title>Rock City Road</title>
@@ -15,10 +15,10 @@
     
             <div class="logo">
                 <a href="index.html"><img src="assets/logo.png"></a>
-                <a href="index.html"><h1>ROCK CITY ROAD</h1></a>
+                <a href="index.html"><h1 class="title-1" >ROCK CITY ROAD</h1></a>
             </div>
     
-            <nav>
+            <nav id="menu">
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="gear.html">Gear</a></li>
@@ -26,24 +26,181 @@
 
                 </ul>
             </nav>
+            <div class="hamburger" id="hamburger-button">
+                <div id="hamLine1" class="ham-line-1"></div>
+                <div id="hamLine2" class="ham-line-2"></div>
+                <div id="hamLine3" class="ham-line-3"></div>
+            </div>
+        </div>
+        <div class="title-and-picture">
+            <img src="assets/guitar.jpg" alt="">
+            <h1 class="page-title">Gear</h1>
         </div>
     </header>
     <main>
+        <!-- GEAR LIST  -->
+            <!-- MICROPHONES LIST  -->
+        <section class="microphones list-section">
+            <h2 class="microphone-title section-title">Microphones</h2>
 
-        <div class="picture">
-            
-            <img src="assets/guitar.jpg" alt="">
-            <h1 class="centered">Gear</h1>
-        </div>
-        
-        <section>
-            <div class="calltoaction container">
-                <h2>A comfortable inviting atmosphere</h2>
-                <div class="line"></div>
-                <h1>YOUR NEXT RELEASE</h1>
-                <h1>STARTS HERE</h1>
+            <ul class="microphones-list-condensor">
+                <li class="microphones-list-condensor-item">Condensor Mics</li>
+                <li class="microphones-list-condensor-item">Lauten Audio Atlantis FC387 LCM</li>
+                <li class="microphones-list-condensor-item">Lauten Audio Clarett FC 357 LCM</li>
+                <li class="microphones-list-condensor-item">Mojave Audio MA-300 tube condenser</li>
+                <li class="microphones-list-condensor-item">Neumann U87</li>
+                <li class="microphones-list-condensor-item">Neumann TLP149</li>
+                <li class="microphones-list-condensor-item">AKG 214 LCM</li>
+                <li class="microphones-list-condensor-item">AKG C300b LCM (pair)</li>
+                <li class="microphones-list-condensor-item">Octavia MK 0-12  SCM Pair</li>
+            </ul>
+
+            <ul class="microphones-list-dynamic">
+                <li class="microphones-list-dynamic-item">Dynamic Mics</li>
+                <li class="microphones-list-dynamic-item">Shure SM7B</li>
+                <li class="microphones-list-dynamic-item">Electrovoice 635A</li>
+                <li class="microphones-list-dynamic-item">Sennheiser 835</li>
+                <li class="microphones-list-dynamic-item">Sennheiser e609 clone</li>
+                <li class="microphones-list-dynamic-item">Sennheiser 421 x2</li>
+                <li class="microphones-list-dynamic-item">Sennheiser 441</li>
+                <li class="microphones-list-dynamic-item">Shure SM57 Multiple</li>
+                <li class="microphones-list-dynamic-item">Shure SM58</li>
+                <li class="microphones-list-dynamic-item">Electrovoice RE-20</li>
+            </ul>
+
+            <ul class="microphones-list-ribbon">
+                <li class="microphones-list-ribbon-item">Ribbon Mics</li>
+                <li class="microphones-list-ribbon-item">Cascade X15 stereo ribbon mic</li>
+                <li class="microphones-list-ribbon-item">AEA R84</li>
+            </ul>
+            <div class="img-container">
+                <img src="assets/mics1.jpg" alt="condensor microphones setup upside down">
+            </div>
+        </section>
+        <!-- PREAMPS LIST  -->
+        <section class="preamps list-section">
+            <h2 class="section-title">Pre-Amps</h2>
+            <ul class="preamps-list">
+                <li class="not-bold preamp-list-item">Focusrite Clarrett 8XP</li>
+                <li class="preamp-list-item">Audient 880P 8 channel pre</li>
+                <li class="preamp-list-item">Universal Audio 710-D 4 channel pre</li>
+                <li class="preamp-list-item">Warm audio WA-73 EQ pre</li>
+                <li class="preamp-list-item">Black Lion Audio Bluey 1076 Compressor</li>
+                <li class="preamp-list-item">DBX 160A Compressor</li>
+                <li class="preamp-list-item">Manley Core Channel Strip</li>
+            </ul>
+            <div class="img-container"><img src="assets/pre-amps2.jpeg" alt="" class="preamp-img">
+            </div>
+        </section>
+        <!-- AMPS AND MONITERS  -->
+        <section class="amps list-section">
+            <h2 class="amps-title section-title">Amps and Moniters</h2>
+            <!-- GUITAR AMPS  -->
+            <ul class="guitar-amps-list">
+                <li class="guitar-amps-list-item">Guitar Amps</li>
+                <li class="guitar-amps-list-item">Fender Twin</li>
+                <li class="guitar-amps-list-item">Fender Champ (solid state)</li>
+                <li class="guitar-amps-list-item">Fender Princeton (by Request)</li>
+                <li class="guitar-amps-list-item">Vox Valvetrinix 100 W Hybrid Modeling amp</li>
+                <li class="guitar-amps-list-item">Vox AC-15 (By request)</li>
+            </ul>
+            <!-- BASS AMPS  -->
+            <ul class="bass-amps-list">
+                <li class="bass-amps-list-item">Bass Amps</li>
+                <li class="bass-amps-list-item">Mesa Boogie Bass 400+ tube Head</li>
+                <li class="bass-amps-list-item">Mesa cabinet 4-10 and 1-15</li>
+                <li class="bass-amps-list-item">Fender Rumble 75</li>
+                <li class="bass-amps-list-item">GK Fusion 500B Head</li>
+            </ul>
+            <!-- MONITERS  -->
+            <ul class="moniters-list">
+                <li class="moniters-list-item">Moniters</li>
+                <li class="moniters-list-item">Yamaha HS8</li>
+                <li class="moniters-list-item">Avantone mix cube</li>
+                <li class="moniters-list-item">JBL LSR 308</li>
+            </ul>
+            <div class="img-container"><img src="assets/bass-cab.jpeg" alt="guitars sitting in a row" class="cab-img">
+            </div>
+        </section>
+        <!-- INSTRUMENTS  -->
+        <section class="instruments list-section">
+            <h2 class="instruments-title section-title">Instruments</h2>
+            <!-- GUITARS  -->
+            <ul class="guitar-instruments-list">
+                <li class="guitar-instuments-list-item">Guitars</li>
+                <li class="guitar-instuments-list-item">Fender Telecaster American</li>
+                <li class="guitar-instuments-list-item">Epiphone Casino with bigsby</li>
+                <li class="guitar-instuments-list-item">Martin D-15 acoustic with built in pick up</li>
+                <li class="guitar-instuments-list-item">Rickenbacker 620W (by Request)</li>
+
+            </ul>
+            <!-- BASSES  -->
+            <ul class="bass-instruments-list">
+                <li class="bass-instuments-list-item">Rickenbacker 4003</li>
+                <li class="bass-instuments-list-item">Fender: 74' MIA Jazz Bass</li>
+                <li class="bass-instuments-list-item">16' MIA Elite Series Jaguar</li>
+                <li class="bass-instuments-list-item">12"  Kingman Acoustic Bass</li>
+                <li class="bass-instuments-list-item">Kramer 4001</li>
+                <li class="bass-instuments-list-item">Epiphone Thunderbird</li>
+            </ul>
+            <!-- Drums  -->
+            <ul class="drums-instruments-list">
+                <li class="drums-instuments-list-item">Drums</li>
+                <li class="drums-instuments-list-item">Pearl Studio Session Select 7" 8" 14" 16" 22" With Coated ambassadors</li>
+                <li class="drums-instuments-list-item">Pearl Sensitone 5" with coated Ambassador</li>
+                <li class="drums-instuments-list-item">Grestch 5" Catilina Maple Snare</li>
+                <li class="drums-instuments-list-item">Black Beauty Snare</li>
+                <li class="drums-instuments-list-item">Paiste 2002 Various</li>
+                <li class="drums-instuments-list-item">Zildjian Various</li>
+            </ul>
+            <!-- KEYS/SYNTHS  -->
+            <ul class="keys-instruments-list">
+                <li class="keys-instuments-list-item">Keys/Synths</li>
+                <li class="keys-instuments-list-item">Artura Micro Brute</li>
+                <li class="keys-instuments-list-item">Akai MPK-325</li>
+                <li class="keys-instuments-list-item">Yamaha 81 Key Weighted</li>
+            </ul>
+            <!-- Misc.  -->
+            <ul class="misc-instruments-list">
+                <li class="misc-instuments-list-item">Misc.</li>
+                <li class="misc-instuments-list-item">Epiphone Mandolin</li>
+                <li class="misc-instuments-list-item">Unknown Banjo</li>
+                <li class="misc-instuments-list-item">Shakers</li>
+                <li class="misc-instuments-list-item">Tambourine</li>
+                <li class="misc-instuments-list-item">Bongo</li>
+
+            </ul>
+            <div class="img-container"><img src="assets/guitars.jpeg" alt="guitars sitting in a row" class="instruments-img">
+            </div>
+        </section>
+        <!-- SOFTWARE  -->
+        <section class="software list-section">
+            <h2 class="softeware-title section-title">Software</h2>
+            <ul class="software-list">
+                <li class="not-bold software-list-item">Pro Tools 20</li>
+                <li class="software-list-item">Soundtoys</li>
+                <li class="software-list-item">Waves</li>
+                <li class="software-list-item">Slate</li>
+                <li class="software-list-item">Izotope</li>
+                <li class="software-list-item">Kontact 5</li>
+
+            </ul>
+            <div class="img-container"><img src="assets/pre-amps.jpeg" alt="guitars sitting in a row" class="preamp2-img">
             </div>
         </section>
     </main>
+    <!-- FOOTER  -->
+    <footer>
+        <ul>
+            <li class="place">Chatham, New York, USA</li>
+            <li class="line1">|</li>
+            <li class="phone">Phone: 518-378-4149</li>
+            <li class="line2">|</li>
+            <li class="email">Email: <span>ldjingles@gmail.com</span></li>
+        </ul>
+
+        <div>Copyright © 2022 Rock City Road</div>
+    </footer>
 </body>
+<script src="menu.js"></script>
 </html>

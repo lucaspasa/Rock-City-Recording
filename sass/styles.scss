@@ -5,6 +5,7 @@ $black: rgb(20, 20, 20);
 $font: 'Montserrat', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+// DESKTOP ONLY STYLES
 @media only screen and (min-width: 500px){
     body {
         margin: 0;
@@ -278,6 +279,12 @@ $font: 'Montserrat', sans-serif;
     }
 }
 
+
+
+
+
+// MOBILE STYLES 
+
 @media only screen and (max-width: 500px){
     body{
         margin: 0;
@@ -291,8 +298,41 @@ $font: 'Montserrat', sans-serif;
                 align-items: center;
                 // NAV AND HAMBURGER 
                 nav{
+                    visibility: hidden;
+                    background-color: black;
+                    position: absolute;
+                    height: 30vh;
+                    margin: 0;
+                    padding: 0;
+                    top: -5px;
+                    z-index: 5;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     ul{
-                        visibility: hidden;
+                        list-style: none;
+                        z-index: 5;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        // border: 2px solid white;
+                        padding: 0;
+                        transform: translateY(2.5em);
+                        li{
+                            text-align: center;
+                            border: 2px solid white;
+                            width: 50vw;
+                            margin: .5em 0;
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                font-size: 1.5em;
+                                font-family: $font;
+
+                            }
+                        }
                     }
                 }
                 .hamburger{
@@ -306,6 +346,7 @@ $font: 'Montserrat', sans-serif;
                     border-radius: 2px;
                     margin-top: 0em;
                     margin-right: 1em;
+                    z-index: 8;
                     div{
                         background-color: black;
                         height: 4px;
@@ -325,6 +366,8 @@ $font: 'Montserrat', sans-serif;
                     justify-content: center;
                     align-items: center;
                     margin-left: .3em;
+                    z-index: 8;
+
                     // border: 2px solid purple;
                     img{
                         width: 80px;
@@ -349,8 +392,10 @@ $font: 'Montserrat', sans-serif;
                     video{
                         position: absolute;
                         // width: 100vw;
+                        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.63);
                         height: 30vh;
                         top: 0;
+                        transform: translateX(-60px);
                         z-index: -9;
                     }
                 }
@@ -360,7 +405,9 @@ $font: 'Montserrat', sans-serif;
                     flex-direction: column;
                     align-items: center;
                     justify-content: flex-start;
-                    transform: translateY(1em);
+                    margin-top: 1em;
+                    // position: relative;
+                    z-index: 0;
                     // border: 2px solid brown;   
                     h2{
                         font-size: 1.3em;
@@ -377,6 +424,7 @@ $font: 'Montserrat', sans-serif;
                         background-color: $yellow;
                         margin: .4em 0;
                         order: 3;
+                        z-index: -2;
                     }
                     .title-big{
                         // border: 3px dashed yellow;
@@ -497,9 +545,9 @@ $font: 'Montserrat', sans-serif;
                     order: 5;
                 }
             }
-        }
+        } // X FOOTER X
     }//X BODY X
-}
+} //MOBILE ONLY STYLES
 
 
 
