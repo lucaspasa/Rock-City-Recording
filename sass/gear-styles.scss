@@ -39,7 +39,8 @@ body {
            align-items: center;
            padding-bottom: 1em;
             .section-title{
-                font-size: 1.8em;
+                font-size: 1.8rem;
+                font-size: clamp(1.8rem, 1.5535211267605635rem + 0.7887323943661971vw, 2.5rem);
                 font-weight: 900;
                 text-align: center;
             }
@@ -50,6 +51,9 @@ body {
                     list-style-type: none;
                     // border: 2px solid red;
                     text-align: center;
+                    font-size: 1rem;
+                    font-size: clamp(1rem, 0.7535211267605634rem + 0.7887323943661971vw, 1.7rem);
+                    height: 2.8rem;
                 }
                 li:nth-child(1){
                     font-weight: 800;
@@ -60,7 +64,9 @@ body {
             }
             .img-container{
                 width: 95vw;
+                max-width: 700px;
                 height: 50vw;
+                max-height: 400px;
                 overflow: hidden;
                 border-radius: 5px;
                 img{
